@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Files</h2>
+
+    <p>
+        <a href="{% url 'file_upload' %}" class="btn btn-primary btn-sm">Upload File</a>
+    </p>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name of the file</th>
+                <th>Uploaded at</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for file in files %}
+                <tr>
+                    <td>{{ file.title }}</td>
+                    <td>{{ file.uploaded_at }}</td>
+                    <td>
+                    <a href="{{ file.file_path.url }}" class="btn btn-outline-primary btn-sm">View File</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
