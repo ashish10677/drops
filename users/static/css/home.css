@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e9ecef !important;
+}
+main {
+    width: 50%;
+    margin: 5% auto;
+    overflow: auto;
+}
+.jumbotron {
+    background-color: white !important;
+}
