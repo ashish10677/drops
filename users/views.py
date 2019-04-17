@@ -3,6 +3,8 @@ from django.views import generic
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import FilesForm, CustomUserCreationForm
 from .models import Files, CustomUser
+from django.conf import settings
+from .split import split_file
 
 class SignUp(generic.CreateView):
     form_class = CustomUserCreationForm
@@ -30,8 +32,9 @@ def file_upload(request):
     })
 
 def file_split(request, pk):
-    if request.method == "POST":
-        print(request)
-        return redirect('file_list')
     file_to_split = get_object_or_404(Files, pk = pk)
+    if request.method == "POST":
+        path = str(settings.MEDIA_ROOT)+"/"+str(file_to_split.file_name)
+        split_file(path, 5)
+        return redirect('file_list')
     return render(request, 'file_split.html', {'file_to_split': file_to_split})
