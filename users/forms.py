@@ -18,6 +18,6 @@ class FilesForm(forms.ModelForm):
     
     class Meta:
         model = Files
-        fields = ("title", "file_path")
+        fields = ("title", "file_name")
 
     

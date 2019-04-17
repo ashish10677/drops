@@ -20,7 +20,10 @@ def upload_file(request):
     if request.method == 'POST':
         form = FilesForm(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            fs = form.save(commit = False)
+            fs.user = request.user
+            print(request.user)
+            fs.save()
             return redirect('file_list')    
     form = FilesForm()
     return render(request, 'upload_file.html', {
