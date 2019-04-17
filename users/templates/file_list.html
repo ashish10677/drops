@@ -16,13 +16,13 @@
         </thead>
         <tbody>
             {% for file in files %}
-                <tr>
-                    <td>{{ file.title }}</td>
-                    <td>{{ file.uploaded_at }}</td>
-                    <td>
-                    <a href="{{ file.file_name.url }}" class="btn btn-outline-primary btn-sm">View File</a>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>{{ file.title }}</td>
+                        <td>{{ file.uploaded_at }}</td>
+                        <td>
+                        <a href="{{ file.file_name.url }}" class="btn btn-outline-primary btn-sm">View File</a>
+                        </td>
+                    </tr>
             {% endfor %}
         </tbody>
     </table>

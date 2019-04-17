@@ -2,7 +2,7 @@ from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import render, redirect
 from .forms import FilesForm
-from .models import Files
+from .models import Files, CustomUser
 from .forms import CustomUserCreationForm
 
 class SignUp(generic.CreateView):
@@ -11,7 +11,8 @@ class SignUp(generic.CreateView):
     template_name = 'signup.html'
 
 def file_list(request):
-    files = Files.objects.all()
+    current_user = CustomUser.objects.get(email = request.user)
+    files = Files.objects.filter(uploader = current_user)
     return render(request, 'file_list.html', {
         'files': files
     })
@@ -21,7 +22,7 @@ def upload_file(request):
         form = FilesForm(request.POST, request.FILES)
         if form.is_valid():
             fs = form.save(commit = False)
-            fs.user = request.user
+            fs.uploader = request.user
             print(request.user)
             fs.save()
             return redirect('file_list')    
