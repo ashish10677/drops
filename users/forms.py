@@ -20,4 +20,9 @@ class FilesForm(forms.ModelForm):
         model = Files
         fields = ("title", "file_name")
 
+# class SplitForm(forms.ModelForm):
     
+#     class Meta:
+#         model = Files
+#         fields = ("title", "file_name", "uploader")
+
