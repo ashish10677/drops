@@ -25,5 +25,3 @@ def place_fragments(from_dir, t):
             nodes[node+t_value] = False
         node += 1
     return stored
-
-# print(place_fragments('./output', [0, 1, 2, 3]))

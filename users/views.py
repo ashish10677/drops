@@ -43,9 +43,10 @@ def file_split(request, pk):
             path = os.path.join(settings.MEDIA_ROOT,str(file_to_split.file_name))
             splitted_file_path = split_file(path, number_of_chunks)
             if splitted_file_path:
-                stored = place_fragments(splitted_file_path, [0, 1, 2, 3])
-                print("-----------------STORED--------------")
-                print(stored)
+                stored_nodes = place_fragments(splitted_file_path, [0, 1, 2, 3])
+                nodes = [node.split("/")[-1] for node in stored_nodes]
+                file_to_split.nodes = nodes
+                file_to_split.save()
         return redirect('file_list')
     form = SplitForm()
     return render(request, 'file_split.html', {'file_to_split': file_to_split, 'form': form})
