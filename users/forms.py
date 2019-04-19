@@ -20,9 +20,8 @@ class FilesForm(forms.ModelForm):
         model = Files
         fields = ("title", "file_name")
 
-# class SplitForm(forms.ModelForm):
-    
-#     class Meta:
-#         model = Files
-#         fields = ("title", "file_name", "uploader")
+class SplitForm(forms.Form):
+
+    CHOICES = [(i,i) for i in range(1,10)]
+    number_of_chunks = forms.ChoiceField(required=False, choices=CHOICES)
 

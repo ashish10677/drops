@@ -1,37 +1,14 @@
 {% extends 'base.html' %}
 
+{% load crispy_forms_tags %}
+
 {% block content %}
     <center><h2>Split File</h2></center>
+    <h5>File Name: {{file_to_split.title}}</h5>
+    <h5>Uploaded at: {{file_to_split.uploaded_at}}</h5>
     <form method="POST">
-    {% csrf_token %}
-        <div class="form-group row">
-            <label for="fileName" class="col-sm-2 col-form-label">File Name</label>
-            <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="fileName" value={{file_to_split.title}}>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Uploaded at</label>
-            <div class="col-sm-10">
-                <p style="margin-top: 0.45rem">{{file_to_split.uploaded_at}}</p>
-            </div>
-        </div>
-        <div class="form-group row">
-            <label for="numberOfChunks" class="col-sm-2 col-form-label">Chunks</label>
-            <div class="col-sm-10">
-                <select class="form-control" id="numberOfChunks">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                </select>
-            </div>
-        </div>
+        {% csrf_token %}
+        {{ form|crispy }}
         <button type="submit" class="btn btn-primary">Split</button>
     </form>
 {% endblock %}

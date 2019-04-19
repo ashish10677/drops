@@ -1,7 +1,7 @@
 from django.urls import reverse_lazy
 from django.views import generic
 from django.shortcuts import render, redirect, get_object_or_404
-from .forms import FilesForm, CustomUserCreationForm
+from .forms import FilesForm, CustomUserCreationForm, SplitForm
 from .models import Files, CustomUser
 from django.conf import settings
 from .split import split_file
@@ -33,8 +33,13 @@ def file_upload(request):
 
 def file_split(request, pk):
     file_to_split = get_object_or_404(Files, pk = pk)
+    form = SplitForm(request.POST or None)
     if request.method == "POST":
-        path = str(settings.MEDIA_ROOT)+"/"+str(file_to_split.file_name)
-        split_file(path, 5)
+        form = SplitForm(request.POST)
+        if form.is_valid():
+            number_of_chunks = int(form.cleaned_data['number_of_chunks'])
+            path = str(settings.MEDIA_ROOT)+"/"+str(file_to_split.file_name)
+            split_file(path, number_of_chunks)
         return redirect('file_list')
-    return render(request, 'file_split.html', {'file_to_split': file_to_split})
+    form = SplitForm()
+    return render(request, 'file_split.html', {'file_to_split': file_to_split, 'form': form})
