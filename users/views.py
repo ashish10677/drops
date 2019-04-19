@@ -5,6 +5,8 @@ from .forms import FilesForm, CustomUserCreationForm, SplitForm
 from .models import Files, CustomUser
 from django.conf import settings
 from .split import split_file
+import os
+from .placement import place_fragments
 
 class SignUp(generic.CreateView):
     form_class = CustomUserCreationForm
@@ -38,8 +40,12 @@ def file_split(request, pk):
         form = SplitForm(request.POST)
         if form.is_valid():
             number_of_chunks = int(form.cleaned_data['number_of_chunks'])
-            path = str(settings.MEDIA_ROOT)+"/"+str(file_to_split.file_name)
-            split_file(path, number_of_chunks)
+            path = os.path.join(settings.MEDIA_ROOT,str(file_to_split.file_name))
+            splitted_file_path = split_file(path, number_of_chunks)
+            if splitted_file_path:
+                stored = place_fragments(splitted_file_path, [0, 1, 2, 3])
+                print("-----------------STORED--------------")
+                print(stored)
         return redirect('file_list')
     form = SplitForm()
     return render(request, 'file_split.html', {'file_to_split': file_to_split, 'form': form})

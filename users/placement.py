@@ -1,5 +1,6 @@
 import os
 import shutil
+from django.conf import settings
 
 def color_nodes():
     nodes = {}
@@ -17,7 +18,7 @@ def place_fragments(from_dir, t):
         file_path = os.path.join(from_dir, file)
         while nodes[node] == False:
             node+=1
-        destination = os.path.join('./nodes', str(node))
+        destination = os.path.join(os.path.join(settings.BASE_DIR,'nodes'), str(node))
         shutil.move(file_path, destination)
         stored.append(destination)
         for t_value in t:
@@ -25,4 +26,4 @@ def place_fragments(from_dir, t):
         node += 1
     return stored
 
-print(place_fragments('./output', [0, 1, 2, 3]))
+# print(place_fragments('./output', [0, 1, 2, 3]))

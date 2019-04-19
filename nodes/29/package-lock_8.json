@@ -1,0 +1,291 @@
+        "lodash": "^4.17.11",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-eth": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth/-/web3-eth-1.0.0-beta.46.tgz",
+      "integrity": "sha512-9gUO3SPBAzL4t31iRmNi/7hK8+35YC3lJz6XH0t1dYhybF8rg5zqxMTjsxQFxcilS9N+4hoCVuA6fVpjAKn4Zg==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-core-promievent": "1.0.0-beta.46",
+        "web3-core-subscriptions": "1.0.0-beta.46",
+        "web3-eth-abi": "1.0.0-beta.46",
+        "web3-eth-accounts": "1.0.0-beta.46",
+        "web3-eth-contract": "1.0.0-beta.46",
+        "web3-eth-ens": "1.0.0-beta.46",
+        "web3-eth-iban": "1.0.0-beta.46",
+        "web3-eth-personal": "1.0.0-beta.46",
+        "web3-net": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-eth-abi": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth-abi/-/web3-eth-abi-1.0.0-beta.46.tgz",
+      "integrity": "sha512-Ac0JTptqZPpoiF+5sg6gJlNkFZPO77qRd39YxIKoxXaXLP8JPFujpNQUJBMJU6kxT9fMYmR1T453JQj3aMEHeQ==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "ethers": "^4.0.0",
+        "lodash": "^4.17.11",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-eth-accounts": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth-accounts/-/web3-eth-accounts-1.0.0-beta.46.tgz",
+      "integrity": "sha512-b5XYe3lcm1JZTqkO0amTIVJcqauFGjSDnCFA/mpYnabJgoQv6119fE2fcLPHSavCetLingCL+zrMqk57IvfYRw==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "crypto-browserify": "3.12.0",
+        "eth-lib": "0.2.8",
+        "lodash": "^4.17.11",
+        "scrypt.js": "0.2.0",
+        "uuid": "3.3.2",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      },
+      "dependencies": {
+        "eth-lib": {
+          "version": "0.2.8",
+          "resolved": "https://registry.npmjs.org/eth-lib/-/eth-lib-0.2.8.tgz",
+          "integrity": "sha512-ArJ7x1WcWOlSpzdoTBX8vkwlkSQ85CjjifSZtV4co64vWxSV8geWfPI9x4SVYu3DSxnX4yWFVTtGL+j9DUFLNw==",
+          "requires": {
+            "bn.js": "^4.11.6",
+            "elliptic": "^6.4.0",
+            "xhr-request-promise": "^0.1.2"
+          }
+        }
+      }
+    },
+    "web3-eth-contract": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth-contract/-/web3-eth-contract-1.0.0-beta.46.tgz",
+      "integrity": "sha512-hcr5a9/SC8CwpV7ZNXuLQXEpzDcJudS1OlPYMQjnrFVjkjRtuYNb6ldUTaTK9R2WV5bVws9qQEJbvsD+NPnqHw==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "lodash": "^4.17.11",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-core-promievent": "1.0.0-beta.46",
+        "web3-core-subscriptions": "1.0.0-beta.46",
+        "web3-eth-abi": "1.0.0-beta.46",
+        "web3-eth-accounts": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-eth-ens": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth-ens/-/web3-eth-ens-1.0.0-beta.46.tgz",
+      "integrity": "sha512-7wXZnFW66ZQUD0gMUTdYsnz5VG9yo/PzJmccL73Swza6NHMpeejTNMgUc/GUzyE3449+Mu/37o3hRu3Z4eWi/w==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "eth-ens-namehash": "2.0.8",
+        "lodash": "^4.17.11",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-core-promievent": "1.0.0-beta.46",
+        "web3-eth-abi": "1.0.0-beta.46",
+        "web3-eth-contract": "1.0.0-beta.46",
+        "web3-net": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-eth-iban": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth-iban/-/web3-eth-iban-1.0.0-beta.46.tgz",
+      "integrity": "sha512-IM9VbznRaEs58n7mYbJcPviOLMAiiveqZT1jtlcJ/DbrvMkArV0Xf6n2OyFY+ak3ppddKVMIAGISxhky6r/7cg==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "bn.js": "4.11.8",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-eth-personal": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-eth-personal/-/web3-eth-personal-1.0.0-beta.46.tgz",
+      "integrity": "sha512-NEmuitdSmoeixXfnw23Br8YZGmAw2iH79gUEvYPto0OQ7edc1LtkZP6h0lFPwXRPhz0Z8UDOg+lv31EN4NKBwA==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-net": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-net": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-net/-/web3-net-1.0.0-beta.46.tgz",
+      "integrity": "sha512-mSEgq5S1SI/M17pS6UEGYBt6v54gaSYw3hvRmx5pu4zoHMz8YmbUSfZh+98uxtcV/TE9v3rCwZur7/0bar9kCA==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "lodash": "^4.17.11",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-providers": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-providers/-/web3-providers-1.0.0-beta.46.tgz",
+      "integrity": "sha512-5h4dFuASthr+EE8xBpAtQ5b5bngjv1ihIBcyEVQEP+bRtvU7qPKA8It2fQLtDl4iSADJDjhhQmvBPKbSlJ9jWg==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "@types/node": "^10.12.18",
+        "eventemitter3": "3.1.0",
+        "lodash": "^4.17.11",
+        "oboe": "2.1.4",
+        "url-parse": "1.4.4",
+        "websocket": "git://github.com/frozeman/WebSocket-Node.git#6c72925e3f8aaaea8dc8450f97627e85263999f2",
+        "xhr2-cookies": "1.1.0"
+      }
+    },
+    "web3-shh": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-shh/-/web3-shh-1.0.0-beta.46.tgz",
+      "integrity": "sha512-1Qka0DEXbcC07+HAdXM9i848FseaGi/G719aU0XbuEZgjbLYp8/uuKExrRkq9kLly6CIPwq20lrVRzScblAKQw==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "web3-core": "1.0.0-beta.46",
+        "web3-core-helpers": "1.0.0-beta.46",
+        "web3-core-method": "1.0.0-beta.46",
+        "web3-core-subscriptions": "1.0.0-beta.46",
+        "web3-net": "1.0.0-beta.46",
+        "web3-providers": "1.0.0-beta.46",
+        "web3-utils": "1.0.0-beta.46"
+      }
+    },
+    "web3-utils": {
+      "version": "1.0.0-beta.46",
+      "resolved": "https://registry.npmjs.org/web3-utils/-/web3-utils-1.0.0-beta.46.tgz",
+      "integrity": "sha512-mSz+NrAil2fDZkxTXHPntCclZ8DofMjv8Q+BYR0VAyzTzylpYNXAV0WDdxBp/sXgniWRZXZMF7OkQNWqhZ1J9g==",
+      "requires": {
+        "@babel/runtime": "^7.3.1",
+        "@types/bn.js": "^4.11.4",
+        "@types/node": "^10.12.18",
+        "bn.js": "4.11.8",
+        "eth-lib": "0.2.8",
+        "ethjs-unit": "^0.1.6",
+        "lodash": "^4.17.11",
+        "number-to-bn": "1.7.0",
+        "randomhex": "0.1.5",
+        "utf8": "2.1.1"
+      },
+      "dependencies": {
+        "eth-lib": {
+          "version": "0.2.8",
+          "resolved": "https://registry.npmjs.org/eth-lib/-/eth-lib-0.2.8.tgz",
+          "integrity": "sha512-ArJ7x1WcWOlSpzdoTBX8vkwlkSQ85CjjifSZtV4co64vWxSV8geWfPI9x4SVYu3DSxnX4yWFVTtGL+j9DUFLNw==",
+          "requires": {
+            "bn.js": "^4.11.6",
+            "elliptic": "^6.4.0",
+            "xhr-request-promise": "^0.1.2"
+          }
+        }
+      }
+    },
+    "websocket": {
+      "version": "git://github.com/frozeman/WebSocket-Node.git#6c72925e3f8aaaea8dc8450f97627e85263999f2",
+      "from": "git://github.com/frozeman/WebSocket-Node.git#browserifyCompatible",
+      "requires": {
+        "debug": "^2.2.0",
+        "nan": "^2.3.3",
+        "typedarray-to-buffer": "^3.1.2",
+        "yaeti": "^0.0.6"
+      }
+    },
+    "wrappy": {
+      "version": "1.0.2",
+      "resolved": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",
+      "integrity": "sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8="
+    },
+    "ws": {
+      "version": "3.3.3",
+      "resolved": "https://registry.npmjs.org/ws/-/ws-3.3.3.tgz",
+      "integrity": "sha512-nnWLa/NwZSt4KQJu51MYlCcSQ5g7INpOrOMt4XV8j4dqTXdmlUmSHQ8/oLC069ckre0fRsgfvsKwbTdtKLCDkA==",
+      "requires": {
+        "async-limiter": "~1.0.0",
+        "safe-buffer": "~5.1.0",
+        "ultron": "~1.1.0"
+      }
+    },
+    "xhr": {
+      "version": "2.5.0",
+      "resolved": "https://registry.npmjs.org/xhr/-/xhr-2.5.0.tgz",
+      "integrity": "sha512-4nlO/14t3BNUZRXIXfXe+3N6w3s1KoxcJUUURctd64BLRe67E4gRwp4PjywtDY72fXpZ1y6Ch0VZQRY/gMPzzQ==",
+      "requires": {
+        "global": "~4.3.0",
+        "is-function": "^1.0.1",
+        "parse-headers": "^2.0.0",
+        "xtend": "^4.0.0"
+      }
+    },
+    "xhr-request": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/xhr-request/-/xhr-request-1.1.0.tgz",
+      "integrity": "sha512-Y7qzEaR3FDtL3fP30k9wO/e+FBnBByZeybKOhASsGP30NIkRAAkKD/sCnLvgEfAIEC1rcmK7YG8f4oEnIrrWzA==",
+      "requires": {
+        "buffer-to-arraybuffer": "^0.0.5",
+        "object-assign": "^4.1.1",
+        "query-string": "^5.0.1",
+        "simple-get": "^2.7.0",
+        "timed-out": "^4.0.1",
+        "url-set-query": "^1.0.0",
+        "xhr": "^2.0.4"
+      }
+    },
+    "xhr-request-promise": {
+      "version": "0.1.2",
+      "resolved": "https://registry.npmjs.org/xhr-request-promise/-/xhr-request-promise-0.1.2.tgz",
+      "integrity": "sha1-NDxE0e53JrhkgGloLQ+EDIO0Jh0=",
+      "requires": {
+        "xhr-request": "^1.0.1"
+      }
+    },
+    "xhr2-cookies": {
+      "version": "1.1.0",
+      "resolved": "https://registry.npmjs.org/xhr2-cookies/-/xhr2-cookies-1.1.0.tgz",
+      "integrity": "sha1-fXdEnQmZGX8VXLc7I99yUF7YnUg=",
+      "requires": {
+        "cookiejar": "^2.1.1"
+      }
+    },
+    "xmlhttprequest": {
+      "version": "1.8.0",
+      "resolved": "https://registry.npmjs.org/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz",
+      "integrity": "sha1-Z/4HXFwk/vOfnWX197f+dRcZaPw="
+    },
+    "xtend": {
+      "version": "4.0.1",
+      "resolved": "https://registry.npmjs.org/xtend/-/xtend-4.0.1.tgz",
+      "integrity": "sha1-pcbVMr5lbiPbgg77lDofBJmNY68="
+    },
+    "yaeti": {
+      "version": "0.0.6",
+      "resolved": "https://registry.npmjs.org/yaeti/-/yaeti-0.0.6.tgz",
+      "integrity": "sha1-8m9ITXJoTPQr7ft2lwqhYI+/lXc="
+    },
+    "yallist": {
+      "version": "3.0.3",
+      "resolved": "https://registry.npmjs.org/yallist/-/yallist-3.0.3.tgz",
+      "integrity": "sha512-S+Zk8DEWE6oKpV+vI3qWkaK+jSbIK86pCwe2IF/xwIpQ8jEuxpw9NyaGjmp9+BoJv5FV2piqCDcoCtStppiq2A=="
+    },
+    "yauzl": {
+      "version": "2.10.0",
+      "resolved": "https://registry.npmjs.org/yauzl/-/yauzl-2.10.0.tgz",
