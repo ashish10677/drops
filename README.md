@@ -6,7 +6,7 @@ This is a Django Project to showcase DROPS methodology.
 ## Steps to run project
 
 ### 1. Clone the project
-> `git clone https://github.com/ashish10677/drops.git`
+`git clone https://github.com/ashish10677/drops.git`
 
 > `cd drops`
 
