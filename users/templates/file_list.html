@@ -21,8 +21,7 @@
                         <td>{{ file.title }}</td>
                         <td>{{ file.uploaded_at }}</td>
                         <td>
-                            {% comment %} file.file_name.url {% endcomment %}
-                            <a href="{% url 'file_download' pk=file.pk %}" class="btn btn-outline-primary btn-sm">View File</a>
+                            <a href="{% url 'file_download' pk=file.pk %}" class="btn btn-outline-primary btn-sm">Get File</a>
                         </td>
                         <td>
                             <a href="{% url 'file_split' pk=file.pk %}" class="btn btn-outline-info btn-sm">Split File</a>

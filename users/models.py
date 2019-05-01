@@ -13,6 +13,7 @@ class Files(models.Model):
     file_name = models.FileField(upload_to='files/', max_length=100)
     uploaded_at = models.DateTimeField(auto_now_add=True)
     nodes = models.CharField(max_length = 100, validators = [int_list_validator], null=True)
+    replicated_nodes = models.CharField(max_length = 100, validators = [int_list_validator], null=True)
 
     def __str__(self):
         return self.title

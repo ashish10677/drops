@@ -18,6 +18,9 @@ def join(fromdir, tofile):
             output.write(filebytes)
         fileobj.close()
     output.close()
+    for filename in parts:
+        filepath = os.path.join(fromdir, filename)
+        os.remove(filepath)
 
 def get_all_chunks(node_list, file_name):
     node_root = os.path.join(settings.BASE_DIR, 'nodes')
