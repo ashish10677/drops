@@ -24,4 +24,3 @@ class SplitForm(forms.Form):
 
     CHOICES = [(i,i) for i in range(1,10)]
     number_of_chunks = forms.ChoiceField(required=False, choices=CHOICES)
-

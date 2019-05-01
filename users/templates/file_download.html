@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+    <center><h2>Download File</h2></center>
+    <h5>File Name: {{file_to_download.title}}</h5>
+    <h5>Uploaded at: {{file_to_download.uploaded_at}}</h5>
+    <h5>Nodes: {{file_to_download.nodes}}</h5>
+    <br />
+    <form method="POST">
+        {% csrf_token %}
+        <center><button class="btn btn-outline-success" type="submit">Download</button></center>
+    </form>
+{% endblock %}

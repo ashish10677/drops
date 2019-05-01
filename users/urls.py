@@ -5,5 +5,6 @@ urlpatterns = [
     path('signup/', views.SignUp.as_view(), name='signup'),
     path('', views.file_list, name="file_list"),
     path('files/upload', views.file_upload, name='file_upload'),
-    path('files/split/<int:pk>/', views.file_split, name='file_split')
+    path('files/split/<int:pk>/', views.file_split, name='file_split'),
+    path('files/download/<int:pk>/', views.file_download, name='file_download')
 ]

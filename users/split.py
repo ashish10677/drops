@@ -12,6 +12,7 @@ def split_file(file_to_split, number_of_chunks):
 
     try:
         fs.split()
+        # os.remove(file_to_split)
     except e as Exception:
         print(e)
         return False
